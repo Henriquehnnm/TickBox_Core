@@ -1,0 +1,15 @@
+{
+  "id": "019dd57d-4caf-763e-87ac-90a434e15dbb",
+  "name": "Hello Name",
+  "description": "Description",
+  "archived": false,
+  "createdAt": "2026-04-28T19:07:31.887Z",
+  "updatedAt": "2026-04-28T19:07:31.887Z",
+  "childrenId": [
+    "019dd57d-4caf-763e-87ac-951a65bce08c",
+    "019dd57d-4caf-763e-87ac-9a79f78debf3"
+  ],
+  "isDraft": false,
+  "startDate": "2026-04-28T19:07:31.887Z",
+  "endDate": "2026-04-28T19:07:31.887Z"
+}
