@@ -1,24 +1,25 @@
 import { Box } from './box'
+import type {ChildBox} from "./childBox.ts";
 
 export class ActionBox extends Box {
   childId: string // Uuid v7
-  content?: string
+  content?: string // Markdown
   duration: number // Ms
 
   constructor(
     name: string,
     description: string,
-    childId: string,
+    child: ChildBox,
     duration: number,
     content?: string,
   ) {
     super(name, description)
-    this.childId = childId
+    this.childId = child.id
     this.content = content
     this.duration = duration
   }
 
-  create() {
+  create(): this {
     return { ...this }
   }
 }

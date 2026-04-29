@@ -1,0 +1,71 @@
+{
+  "parent": {
+    "id": "019dd9b0-8dbf-72bb-9438-bd33f1b85556",
+    "name": "Hello World!",
+    "description": "",
+    "archived": false,
+    "createdAt": "2026-04-29T14:41:59.743Z",
+    "updatedAt": "2026-04-29T14:41:59.743Z",
+    "childrenId": [
+      "019dd9b0-8dbf-72bb-9438-c2d3666ee91c",
+      "019dd9b0-8dbf-72bb-9438-c45a3d910a9c"
+    ],
+    "isDraft": false,
+    "startDate": "2026-04-29T00:00:00.000Z",
+    "endDate": "2026-05-15T00:00:00.000Z"
+  },
+  "children": [
+    {
+      "id": "019dd9b0-8dbf-72bb-9438-c2d3666ee91c",
+      "name": "Hello World from Child",
+      "description": "",
+      "archived": false,
+      "createdAt": "2026-04-29T14:41:59.743Z",
+      "updatedAt": "2026-04-29T14:41:59.743Z",
+      "parentId": "019dd9b0-8dbf-72bb-9438-bd33f1b85556",
+      "actionsId": [
+        "019dd9b0-8dbf-72bb-9438-cbfbbdc34efe"
+      ],
+      "isAbstract": false,
+      "duration": 2000
+    },
+    {
+      "id": "019dd9b0-8dbf-72bb-9438-c45a3d910a9c",
+      "name": "Hello World from Child BTW",
+      "description": "",
+      "archived": false,
+      "createdAt": "2026-04-29T14:41:59.743Z",
+      "updatedAt": "2026-04-29T14:41:59.743Z",
+      "parentId": "019dd9b0-8dbf-72bb-9438-bd33f1b85556",
+      "actionsId": [
+        "019dd9b0-8dbf-72bb-9438-ce46521661c7"
+      ],
+      "isAbstract": false,
+      "duration": 2000
+    }
+  ],
+  "actions": [
+    {
+      "id": "019dd9b0-8dbf-72bb-9438-cbfbbdc34efe",
+      "name": "Hello World from Action",
+      "description": "",
+      "archived": false,
+      "createdAt": "2026-04-29T14:41:59.743Z",
+      "updatedAt": "2026-04-29T14:41:59.743Z",
+      "childId": "019dd9b0-8dbf-72bb-9438-c2d3666ee91c",
+      "content": "# Start new TickBox",
+      "duration": 2000
+    },
+    {
+      "id": "019dd9b0-8dbf-72bb-9438-ce46521661c7",
+      "name": "Hello World from Action BTW",
+      "description": "",
+      "archived": false,
+      "createdAt": "2026-04-29T14:41:59.743Z",
+      "updatedAt": "2026-04-29T14:41:59.743Z",
+      "childId": "019dd9b0-8dbf-72bb-9438-c45a3d910a9c",
+      "content": "# Start new TickBox",
+      "duration": 2000
+    }
+  ]
+}

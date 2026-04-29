@@ -18,7 +18,7 @@ export class ChildBox extends Box {
     this.isAbstract = !this.isAbstract
   }
 
-  newAction(action: ActionBox) {
+  addAction(action: ActionBox) {
     if (this.isAbstract) {
       this.toggleAbstract()
     }
@@ -30,7 +30,7 @@ export class ChildBox extends Box {
     this.actionsId.push(action.id)
   }
 
-  create() {
+  create(): this {
     return { ...this }
   }
 }

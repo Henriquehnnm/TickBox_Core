@@ -1,5 +1,5 @@
 import { Box } from './box'
-import type { ChildBox } from './childBox'
+import { ChildBox } from './childBox'
 
 export class ParentBox extends Box {
   childrenId?: string[] // Uuid v7
@@ -17,7 +17,7 @@ export class ParentBox extends Box {
     this.isDraft = !this.isDraft
   }
 
-  newChild(child: ChildBox) {
+  addChild(child: ChildBox) {
     if (this.isDraft) {
       this.toggleDraft()
     }
@@ -27,7 +27,7 @@ export class ParentBox extends Box {
     this.childrenId.push(child.id)
   }
 
-  create() {
+  create(): this {
     return { ...this }
   }
 }
